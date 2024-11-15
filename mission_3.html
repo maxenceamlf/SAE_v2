@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Title</title>
+</head>
+<body>
+<header class="header">
+    <nav class="Menu">
+
+        <ul>
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="Introduction.html">Introduction</a></li>
+            <li><a href="mission_1.html">Mission 1</a></li>
+            <li><a href="mission_2.html">Mission 2</a></li>
+            <li><a href="mission_3.html">Mission 3</a></li>
+            <li><a href="Conclusion.html">Conclusion</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main>
+    <h1> Mission 3</h1>
+
+    <section>
+        <h3>Contexte :</h3>
+        <p>
+            QBE permettait une prise en main facile, cette dernière nous demandant seulement de sélectionner les éléments
+            que nous voulions, cependant cette simplicité fut aussi un défaut car dès que la requête se complexifie ce fut
+            plus compliqué d’obtenir le résultat escompté. Afin de pallier ce problème nous avons donc commencé à écrire nos
+            requêtes en SQL.
+        </p>
+    </section>
+
+    <section>
+        <h3>Présentation d’au moins 2 indicateurs intéressants dans chaque thème imposé (Énoncé,
+            construction, SQL, résultat) :
+            1 : Desserts / boissons
+            2 : l’offre de KDou
+            3 : Provenance des produits
+            4 : La clientèle
+        </h3>
+        <p></p>
+    </section>
+
+
+    <section>
+        <h3> Présentation de vos indicateurs (Énoncé, construction, SQL, résultat) :</h2>
+            <ol>
+
+                <li>Desserts / boissons </li>
+                <div>KDou s’intéresse aux desserts et aux boissons dans sa réflexion en lien avec la santé.
+                    Combien y a-t-il de produits correspondants vendus 50€ ou plus ? On veut les connaître avec leur pays d’origine.</div>
+                <div>Afin de répondre à cette requête il nous faut tout d’abord trouver les produits qui sont des boissons(code
+                    catégorie 1) ou des desserts (code catégorie 3), puis par la suite ne prendre que les produits dont le prix est
+                    supérieure ou égale à 50.</div>
+                <img >
+                <img >
+                <div>On veut le chiffre d'affaires généré par catégorie desserts ou catégorie.
+                    Pour trouver le chiffre d'affaire d'une catégorie il nous faut regrouper les articles par catégorie puis faire
+                    la somme du prix à l'unité d’un article multiplié par la quantité vendu et par sa remise si il en a une.</div>
+                <img >
+                <img >
+                <br>
+
+                <li>L’offre de KDou</li>
+                <div>Donner des informations sur les fournisseurs qui proposent des produits qui ne sont pas commandés
+                    actuellement ?</div>
+                <div>On recherche les numéro de fournisseur qui n’on aucun article dans la table Détail Commande</div>
+                <img >
+                <img >
+                <div>Quels sont les pays qui ont une offre importante de produits ?</div>
+                <div>On regroupe tout d’abord les articles par fournisseur puis par pays et on compte le nombre d'articles
+                    provenant d’un certain pays.</div>
+                <img >
+                <img >
+                <br>
+
+                <li>Provenance des produits</li>
+                <div>Quels sont les pays de provenance de ces catégories(boissons et dessert) ?</div>
+                <div>On affiche les pays des fournisseur qui vendent des boissons ou des desserts</div>
+                <img >
+                <img >
+                <div>Pour l’Allemagne pays proche, quels sont les desserts ou boissons vendus à moins de 100 euros ?</div>
+                <div>On regarde tout d’abord les articles provenant des catégories dont nous avons besoin puis l’on ajoute comme
+                    condition le fait que les fournisseurs des produits viennent d’allemagne et que le prix de leurs produits soit
+                    inferieur à 100 eur</div>
+                <img >
+                <img >
+                <br>
+
+                <li>La clientèle </li>
+                <div>Certains clients n’ont jamais eu la remise la plus importante de 25%. Qui sont-ils ?</div>
+                <div>on sélectionne les clients dont la remise dans la table detail commande est inférieur à 25%.</div>
+                <img >
+                <img >
+                <div>Un client nantais Le verre à soi souhaite savoir quels autres clients nantais commandent aussi des produits
+                    en Allemagne pour envisager de futures livraisons groupées.</div>
+                <div>On cherche les clients venant de Nantes qui commande des articles en allemagne</div>
+                <img >
+                <img >
+            </ol>
+    </section>
+</main>
+
+<footer>
+    <br>
+</footer>
+
+</body>
+</html>
